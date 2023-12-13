@@ -1,0 +1,74 @@
+/* Button styling */
+button {
+    background-color: #CC2936;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Upvote and Downvote button styling */
+button.upvote {
+    background-color: #FDE74C;
+}
+
+button.downvote {
+    background-color: #5BC0EB;
+}
+
+/* Post container styling */
+#post-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Individual post styling */
+.post {
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 10px;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.post-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.post-info {
+    padding: 10px;
+}
+
+.post-title {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.post-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-author,
+.post-subreddit {
+    font-size: 0.8em;
+    color: #555;
+}
+
+.upvote-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Custom arrow styling for upvote and downvote buttons */
+button::before {
+    content: '▲';
+    margin-right: 5px;
+}
+
+button.downvote::before {
+    content: '▼';
+    margin-right: 5px;
+}
